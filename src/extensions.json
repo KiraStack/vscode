@@ -1,0 +1,19 @@
+{
+  // Last updated: 2026-02-27
+  // NOTE: This list might be stale; verify extensions before use
+  "recommendations": [
+    "kilocode.Kilo-Code",
+    "esbenp.prettier-vscode",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.cpptools",
+    "JohnnyMorganz.luau-lsp",
+    "JohnnyMorganz.stylua",
+    "eamodio.gitlens",
+    "yandeu.five-server",
+    "antfu.theme-vitesse",
+    "antfu.icons-carbon",
+    "chadalen.vscode-jetbrains-icon-theme",
+    "ChakornK.vsc-discord-rpc",
+    "jnoortheen.nix-ide"
+  ]
+}
