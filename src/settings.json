@@ -29,8 +29,14 @@
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools",
     },
+    "[lua]": {
+        "editor.defaultFormatter": "JohnnyMorganz.stylua",
+    },
     "[luau]": {
         "editor.defaultFormatter": "JohnnyMorganz.stylua",
+    },
+    "[snippets]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[nix]": {
         "editor.defaultFormatter": "jnoortheen.nix-ide",
@@ -61,11 +67,12 @@
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, JetBrainsMono NF, Consolas, 'Courier New', monospace",
 
     // Themes
-    "workbench.colorTheme": "Monochrome Dark",
+    "workbench.colorTheme": "Vitesse Dark Soft",
     // "workbench.preferredLightColorTheme": "Tokyo Night Light",
     // "workbench.preferredDarkColorTheme": "Tokyo Night",
     // "workbench.preferredHighContrastLightColorTheme": "Tokyo Night Light",
     // "workbench.preferredHighContrastColorTheme": "Tokyo Night",
+    "workbench.productIconTheme": "icons-carbon",
     "workbench.iconTheme": "vscode-jetbrains-icon-theme",
 
     // Search
@@ -104,8 +111,9 @@
         "JohnnyMorganz.stylua": "stable",
         "eamodio.gitlens": "stable", // Git supercharged
         "yandeu.five-server": "stable",
-        "anotherglitchinthematrix.monochrome": "stable", // Theme
-        "chadalen.vscode-jetbrains-icon-theme": "stable", // Icons
+        "antfu.theme-vitesse": "stable", // Theme
+        "antfu.icons-carbon": "stable", // Product Icon Theme
+        "chadalen.vscode-jetbrains-icon-theme": "stable", // Icon Theme
         "ChakornK.vsc-discord-rpc": "stable", // Discord RP integration
         "jnoortheen.nix-ide": "stable", // Nix
     },
