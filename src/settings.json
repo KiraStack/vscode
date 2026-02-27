@@ -64,10 +64,10 @@
 
     // Console
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, JetBrainsMono NF, Consolas, 'Courier New', monospace",
+	"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, JetBrainsMono NF, Consolas, 'Courier New', monospace",
 
-    // Themes
-    "workbench.colorTheme": "Vitesse Dark Soft",
+	// Appearance
+	"workbench.colorTheme": "Tokyo Night",
     // "workbench.preferredLightColorTheme": "Tokyo Night Light",
     // "workbench.preferredDarkColorTheme": "Tokyo Night",
     // "workbench.preferredHighContrastLightColorTheme": "Tokyo Night Light",
@@ -104,14 +104,15 @@
     // Extensions
     "extensions.allowed": {
         "kilocode.Kilo-Code": "stable", // Coding agent
-        "esbenp.prettier-vscode": "stable", // Code formatter
+        "esbenp.prettier-vscode": "stable", // Foremost formatter
         "christian-kohler.path-intellisense": "stable", // File path auto-completion
         "ms-vscode.cpptools": "stable", // C/C++ extension
-        "JohnnyMorganz.luau-lsp": "stable",
-        "JohnnyMorganz.stylua": "stable",
+        "UnderMyWheel.roblox-lua": "stable", // Luau extension
+        "JohnnyMorganz.stylua": "stable", // Lua formatter
         "eamodio.gitlens": "stable", // Git supercharged
         "yandeu.five-server": "stable",
-        "antfu.theme-vitesse": "stable", // Theme
+		"enkia.tokyo-night": "stable", // Theme
+        // "antfu.theme-vitesse": "stable", // Backup Theme
         "antfu.icons-carbon": "stable", // Product Icon Theme
         "chadalen.vscode-jetbrains-icon-theme": "stable", // Icon Theme
         "ChakornK.vsc-discord-rpc": "stable", // Discord RP integration
@@ -294,8 +295,17 @@
         "*.xaml": "$(capture).xaml.cs",
     },
 
+	// Kilo Code
+	"kilo-code.debug": false,
+	"kilo-code.allowedCommands": [
+		"git log",
+		"git diff",
+		"git show"
+	],
+	"kilo-code.deniedCommands": [],
+
     // Security
     "telemetry.telemetryLevel": "off",
     "telemetry.editStats.enabled": false,
-    "security.workspace.trust.untrustedFiles": "open",
+	"security.workspace.trust.untrustedFiles": "open",
 }
