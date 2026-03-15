@@ -1,6 +1,7 @@
 {
     // Core editing behavior
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
     "editor.inlineSuggest.enabled": true,
     "editor.quickSuggestions": {
         "other": true,
@@ -35,15 +36,18 @@
     "[luau]": {
         "editor.defaultFormatter": "JohnnyMorganz.stylua",
     },
-    "[snippets]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
     "[nix]": {
         "editor.defaultFormatter": "jnoortheen.nix-ide",
     },
+    "[snippets]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+    },
+    "[yuck]": {
+        "editor.defaultFormatter": "eww-yuck.yuck",
+    },
 
     // Core window behavior
-    // "window.autoDetectColorScheme": true, // temporarily disabled
+    "window.autoDetectColorScheme": true,
     "window.title": "${appName}",
     "window.menuBarVisibility": "toggle",
     "window.commandCenter": false,
@@ -53,25 +57,23 @@
     "workbench.layoutControl.enabled": false,
     "workbench.statusBar.visible": false,
     "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.showIcons": false,
 
     // Typography
     "editor.fontSize": 16,
     "editor.lineHeight": 1.5,
     "editor.letterSpacing": 0.5,
-    "editor.fontFamily": "JetBrainsMono Nerd Font, JetBrainsMono NF, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "JetBrainsMono Nerd Font Mono, monospace",
     "editor.fontLigatures": true,
     "editor.cursorSmoothCaretAnimation": "on",
 
     // Console
     "terminal.integrated.cursorStyle": "line",
-	"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, JetBrainsMono NF, Consolas, 'Courier New', monospace",
-
-	// Appearance
-	"workbench.colorTheme": "Tokyo Night",
-    // "workbench.preferredLightColorTheme": "Tokyo Night Light",
-    // "workbench.preferredDarkColorTheme": "Tokyo Night",
-    // "workbench.preferredHighContrastLightColorTheme": "Tokyo Night Light",
-    // "workbench.preferredHighContrastColorTheme": "Tokyo Night",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, JetBrainsMono NF, Consolas, 'Courier New', monospace",
+    "workbench.preferredLightColorTheme": "Default Dark Modern",
+    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+    "workbench.preferredHighContrastLightColorTheme": "Default High Contrast Light",
+    "workbench.preferredHighContrastColorTheme": "Default High Contrast",
     "workbench.productIconTheme": "icons-carbon",
     "workbench.iconTheme": "vscode-jetbrains-icon-theme",
 
@@ -107,15 +109,15 @@
         "esbenp.prettier-vscode": "stable", // Foremost formatter
         "christian-kohler.path-intellisense": "stable", // File path auto-completion
         "ms-vscode.cpptools": "stable", // C/C++ extension
-        "UnderMyWheel.roblox-lua": "stable", // Luau extension
+        "JohnnyMorganz.luau-lsp": "stable", // Luau LSP
         "JohnnyMorganz.stylua": "stable", // Lua formatter
         "eamodio.gitlens": "stable", // Git supercharged
         "yandeu.five-server": "stable",
-		"enkia.tokyo-night": "stable", // Theme
-        // "antfu.theme-vitesse": "stable", // Backup Theme
+        // "antfu.theme-vitesse": "stable", // Theme
         "antfu.icons-carbon": "stable", // Product Icon Theme
         "chadalen.vscode-jetbrains-icon-theme": "stable", // Icon Theme
         "ChakornK.vsc-discord-rpc": "stable", // Discord RP integration
+        "eww-yuck.yuck": "stable", // Yuck
         "jnoortheen.nix-ide": "stable", // Nix
     },
 
@@ -295,17 +297,13 @@
         "*.xaml": "$(capture).xaml.cs",
     },
 
-	// Kilo Code
-	"kilo-code.debug": false,
-	"kilo-code.allowedCommands": [
-		"git log",
-		"git diff",
-		"git show"
-	],
-	"kilo-code.deniedCommands": [],
+    // Kilo Code
+    "kilo-code.debug": false,
+    "kilo-code.allowedCommands": ["git log", "git diff", "git show"],
+    "kilo-code.deniedCommands": [],
 
     // Security
     "telemetry.telemetryLevel": "off",
     "telemetry.editStats.enabled": false,
-	"security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.untrustedFiles": "open",
 }
