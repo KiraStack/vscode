@@ -4,6 +4,7 @@
   "recommendations": [
     "ChakornK.vsc-discord-rpc",
     "eamodio.gitlens",
+    "esbenp.prettier-vscode",
     "fogio.jetbrains-file-icon-theme",
     "jnoortheen.nix-ide",
     "kilocode.Kilo-Code",
