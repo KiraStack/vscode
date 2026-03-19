@@ -17,7 +17,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
 
-    // Formatting (Prettier)
+    // Formatting
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "all",
@@ -25,25 +25,22 @@
 
     // Language overrides
     "[c]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.defaultFormatter": "ms-vscode.cpptools"
     },
     "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.defaultFormatter": "ms-vscode.cpptools"
     },
-    "[lua]": {
-        "editor.defaultFormatter": "JohnnyMorganz.stylua",
-    },
-    "[luau]": {
-        "editor.defaultFormatter": "JohnnyMorganz.stylua",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[nix]": {
-        "editor.defaultFormatter": "jnoortheen.nix-ide",
+        "editor.defaultFormatter": "jnoortheen.nix-ide"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
     },
     "[snippets]": {
-        "editor.defaultFormatter": "vscode.json-language-features",
-    },
-    "[yuck]": {
-        "editor.defaultFormatter": "eww-yuck.yuck",
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
 
     // Core window behavior
@@ -74,8 +71,7 @@
     "workbench.preferredDarkColorTheme": "Default Dark Modern",
     "workbench.preferredHighContrastLightColorTheme": "Default High Contrast Light",
     "workbench.preferredHighContrastColorTheme": "Default High Contrast",
-    "workbench.productIconTheme": "icons-carbon",
-    "workbench.iconTheme": "vscode-jetbrains-icon-theme",
+    "workbench.iconTheme": "jetbrains-file-icon-theme-auto",
 
     // Search
     "search.exclude": {
@@ -103,23 +99,8 @@
         "**/LICENSE*": true,
     },
 
-    // Extensions
-    "extensions.allowed": {
-        "kilocode.Kilo-Code": "stable", // Coding agent
-        "esbenp.prettier-vscode": "stable", // Foremost formatter
-        "christian-kohler.path-intellisense": "stable", // File path auto-completion
-        "ms-vscode.cpptools": "stable", // C/C++ extension
-        "JohnnyMorganz.luau-lsp": "stable", // Luau LSP
-        "JohnnyMorganz.stylua": "stable", // Lua formatter
-        "eamodio.gitlens": "stable", // Git supercharged
-        "yandeu.five-server": "stable",
-        // "antfu.theme-vitesse": "stable", // Theme
-        "antfu.icons-carbon": "stable", // Product Icon Theme
-        "chadalen.vscode-jetbrains-icon-theme": "stable", // Icon Theme
-        "ChakornK.vsc-discord-rpc": "stable", // Discord RP integration
-        "eww-yuck.yuck": "stable", // Yuck
-        "jnoortheen.nix-ide": "stable", // Nix
-    },
+    // Extensions (unused)
+    // "extensions.allowed": {},
 
     // GitHub
     "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}",
@@ -173,24 +154,7 @@
         },
     },
 
-    // Path suggestions
-    "typescript.suggest.paths": false,
-    "javascript.suggest.paths": false,
-    "vetur.completion.useScaffoldSnippets": false,
-    "volar.completion.autoImport": false,
-    "intelephense.completion.insertUseDeclaration": false,
-    "python.analysis.autoImportCompletions": false,
-    "gopls.completeUnimported": false,
-    "omnisharp.enableImportCompletion": false,
-    "rust-analyzer.completion.autoimport.enable": false,
-    "editor.suggest.showPaths": false,
-
-    // Path Intellisense settings
-    "path-intellisense.extensionOnImport": true,
-    "path-intellisense.autoSlashAfterDirectory": true,
-
-    // File nesting
-    // updated 2026-01-30 23:35
+    // File nesting (updated 2026-01-30)
     // https://github.com/antfu/vscode-file-nesting-config
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.expand": false,
@@ -305,5 +269,5 @@
     // Security
     "telemetry.telemetryLevel": "off",
     "telemetry.editStats.enabled": false,
-    "security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.untrustedFiles": "prompt",
 }
