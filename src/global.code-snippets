@@ -24,7 +24,6 @@
 	// 	"exclude": ["**/temp/*.ts"],
 	// 	"description": "Insert test block"
 	// }
-
 	// Javascript snippets
 	"import": {
 		"scope": "javascript,typescript",
